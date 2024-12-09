@@ -1,0 +1,83 @@
+<!-- ZOUHAIR EL YANI(20238383) & DOUAE SAKKAT (20253363)-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Romantic House</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="titleholder">
+            <h1>Romantic House</h1>
+        </div>
+        <img src="logo.jpg" alt="logo du restaurant Romantic House" class="logo">
+        <div id="content">
+            <nav>
+                <ul id="links">
+                    <li><a href="./accueil.html">Accueil</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./reservation.html">Réservation</a></li>
+                    <li><a href="./a_propos.html">À propos</a></li>
+                    <li><a href="./design.html">Design</a></li>
+                </ul>
+            </nav>
+            <div>
+                <main>
+                    <br>
+                    <h2 class="forfait">REMPLISSEZ LE FORMULAIRE POUR RECEVOIR UNE CONFIRMATION DE RÉSERVATIONS </h2>
+                    <form method="post" action="#">
+                        <label for="myPrenom">* Prénom:</label>
+                        <input type="text" name="myPrenom" id="myPrenom" required>
+                        
+                        <label for="myNom">* Nom:</label>
+                        <input type="text" name="myNom" id="myNom" required>
+                        
+                        <label for="myEmail">* Email:</label>
+                        <input type="email" name="myEmail" id="myEmail" required>
+                        
+                        <label for="myTel">* Téléphone:</label>
+                        <input type="tel" name="myTel" id="myTel" pattern="\d+">
+
+                        <h4 id="dateerr" hidden>Date Invalide!</h4>
+                        <label for="myDateévènement">*Date de la réservation:</label>
+                        <input type="date" name="myDateévènement" id="myDateévènement" required>
+                        <label for="myHeure">*Heure de la réservation:</label>
+                        <input type="time" name="myHeure" id="myHeure" required>
+
+                        <label>* Préférences alimentaires:</label>
+                        <input type="checkbox" name="preferences[]" id="vegetarien" value="Vegetarien" checked>
+                        <label for="vegetarien">Végétarien</label>
+                        <input type="checkbox" name="preferences[]" id="sansGluten" value="Sans Gluten">
+                        <label for="sansGluten">Sans Gluten</label>
+                        <input type="checkbox" name="preferences[]" id="allergique" value="Allergique">
+                        <label for="allergique">Allergique</label>
+                        <br>
+                        <label>* Placement :</label>
+                        <input type="radio" name="placement" id="placementTable" value="Table" checked>
+                        <label for="placementTable">Table</label>
+                        <input type="radio" name="placement" id="placementBar" value="Bar">
+                        <label for="placementBar">Bar</label>
+                        <br>
+                        <label for="myCommentaires">* Commentaires:</label>
+                        <textarea name="myCommentaires" id="myCommentaires" required></textarea>
+
+                        <input id="mySubmit" type="submit" value="Soumettre">         
+                    </form>
+                    <img src="soon.jpg" alt="" class="deco">
+                </main>
+            </div>
+        </div>
+        <footer>
+            <i>
+                <small>
+                    Copyright &copy; 2023 Romantic House <br> 
+                    <strong> Douae Sakkat et Zouhair El Yani </strong>
+                    <a href="mailto:douaesakkat7@gmail.com">douaesakkat7@gmail.com</a><br>
+                </small>
+            </i>
+        </footer>
+    </div>
+</body>
+</html>
